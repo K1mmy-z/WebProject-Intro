@@ -3,11 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>รับสมัครนักศึกษา - มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</title>
+    <title>
+      รับสมัครนักศึกษา - มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ
+      (เข้าสู่ระบบแล้ว)
+    </title>
     <link rel="stylesheet" href="CSS/styles.css" />
   </head>
   <body>
-    <!-- ส่วนหัว (Header) ตามแบบ Figma หน้า 1 -->
+    <!-- ส่วนหัว (Header) แบบล็อกอินแล้ว ตาม Figma หน้า 3-6 -->
     <header class="main-header">
       <div class="header-top">
         <div class="logo-container">
@@ -21,19 +24,23 @@
             <h2>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</h2>
           </div>
         </div>
-        <!-- ปุ่มเข้าสู่ระบบแบบวงรี (ยังไม่ Login) -->
+        <!-- ป้ายชื่อผู้ใช้เมื่อเข้าสู่ระบบแล้ว -->
         <div class="header-auth">
-          <a href="login.html" class="btn-login-pill">เข้าสู่ระบบ</a>
+          <div class="user-pill-badge">
+            <span class="user-name">นาย สมชาย อันตราย</span>
+            <span class="divider">|</span>
+            <a href="index.html" class="logout-link">ออกจากระบบ</a>
+          </div>
         </div>
       </div>
 
       <!-- แถบเมนูนำทาง -->
       <nav class="main-nav">
         <ul class="nav-links">
-          <li><a href="index.html" class="active">หน้าแรก</a></li>
+          <li><a href="index_logged.html" class="active">หน้าแรก</a></li>
           <li><a href="schedule.html">กำหนดการรับสมัคร</a></li>
           <li><a href="#">หลักสูตร</a></li>
-          <li><a href="login.html">ลงทะเบียนเรียน</a></li>
+          <li><a href="register.html">ลงทะเบียนเรียน</a></li>
           <li><a href="#">ติดต่อสอบถาม</a></li>
         </ul>
       </nav>
@@ -49,10 +56,9 @@
           class="home-banner-img"
         />
 
-        <!-- 2 ปุ่มวงรีใหญ่คู่กัน -->
+        <!-- 2 ปุ่มวงรีใหญ่คู่กัน (เมื่อ Login แล้วกดไปหน้ากรอกข้อมูลได้เลย) -->
         <div class="home-two-buttons">
-          <!-- ถ้ากดลงทะเบียนเรียน จะพาไปหน้า login ก่อนเพราะยังไม่ได้เข้าสู่ระบบ -->
-          <a href="login.html" class="btn-pill-brown">ลงทะเบียนเรียน</a>
+          <a href="register.html" class="btn-pill-brown">ลงทะเบียนเรียน</a>
           <a href="schedule.html" class="btn-pill-white">หลักสูตรที่เปิดสอน</a>
         </div>
 
@@ -64,7 +70,7 @@
       </div>
     </main>
 
-    <!-- ส่วนท้าย (Footer) ตามแบบ Figma -->
+    <!-- ส่วนท้าย (Footer) -->
     <footer class="main-footer">
       <div class="footer-left">
         <p><strong>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</strong></p>
