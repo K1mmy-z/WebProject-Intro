@@ -1,0 +1,119 @@
+/* รีเซ็ตค่าเริ่มต้นและกำหนดฟอนต์ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sarabun', 'Tahoma', sans-serif; /* แนะนำให้ดึง Google Fonts ฟอนต์ Sarabun มาใช้ */
+}
+
+/* จัดเลย์เอาต์หลักให้เต็มจอ และดัน Footer ลงล่างเสมอ */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #fcebd7; /* สีพื้นหลังเนื้อหาตรงกลางโทนสีส้มอ่อน */
+}
+
+/* -------------------------------------
+   HEADER STYLES
+------------------------------------- */
+.main-header {
+    width: 100%;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #e2e2e2; /* สีพื้นหลังแถบบนสุดโทนเทาอ่อน */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* วงกลมจำลองที่สำหรับใส่ตราสัญลักษณ์ */
+.logo-placeholder {
+    width: 60px;
+    height: 60px;
+    background-color: #b33939; 
+    border-radius: 50%;
+}
+
+.site-title h1 {
+    font-size: 20px;
+    color: #922b2b; /* สีแดงเลือดหมูของข้อความ */
+    font-weight: bold;
+}
+
+.site-title h2 {
+    font-size: 16px;
+    color: #922b2b; 
+    font-weight: normal;
+}
+
+.btn-login {
+    background-color: #c48989; /* สีปุ่มเข้าสู่ระบบ */
+    color: white;
+    border: none;
+    padding: 10px 35px;
+    border-radius: 25px; /* ทำให้ปุ่มโค้งมน */
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* -------------------------------------
+   NAVIGATION STYLES
+------------------------------------- */
+.main-nav {
+    background-color: #737373; /* สีพื้นหลังเมนูนำทางโทนเทาเข้ม */
+    padding: 12px 5%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #d1d1d1;
+    font-size: 15px;
+}
+
+/* ขีดเส้นใต้หรือเปลี่ยนสีเมื่ออยู่หน้าปัจจุบัน/เอาเมาส์ชี้ */
+.nav-links li a.active,
+.nav-links li a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+/* -------------------------------------
+   MAIN CONTENT PLACEHOLDER
+------------------------------------- */
+.content-placeholder {
+    flex-grow: 1; /* โค้ดส่วนนี้จะดันให้ Footer ไปอยู่ขอบล่างสุดของหน้าจอเสมอ */
+}
+
+/* -------------------------------------
+   FOOTER STYLES
+------------------------------------- */
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #922b2b; /* สีพื้นหลัง Footer แดงเลือดหมูเข้ม */
+    color: white;
+    padding: 20px 5%;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-right {
+    text-align: right;
+}
