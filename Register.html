@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>รับสมัครนักศึกษา - มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-top">
+            <div class="logo-container">
+                <img src="images/Seal_of_KMUTNB.webp" alt="ตราสัญลักษณ์ มจพ." class="logo-img" />
+                <div class="site-title">
+                    <h1>รับสมัครนักศึกษา</h1>
+                    <h2>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</h2>
+                </div>
+            </div>
+
+            <div class="header-auth">
+                <div class="user-pill-badge">
+                    <span class="user-name">นาย สมชาย อันตราย</span>
+                    <span class="divider">|</span>
+                    <a href="index.html" class="logout-link">ออกจากระบบ</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- แถบเมนูนำทาง -->
+        <nav class="main-nav">
+            <ul class="nav-links">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="schedule.html">กำหนดการรับสมัคร</a></li>
+                <li><a href="https://admission.kmutnb.ac.th/sites/default/files/2025-08/dataforcallcuricert-bacn.pdf"
+                        target="_blank">หลักสูตร</a></li>
+                <li><a href="Register.html" class="active">ลงทะเบียนเรียน</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="form-container">
+
+        <div class="form-page-container">
+
+            <!-- แถบหัวข้อใหญ่สุด -->
+            <div class="brown-title-banner title-large">
+                กรอกข้อมูลสมัครเรียน
+            </div>
+
+            <form onsubmit="event.preventDefault(); window.location.href='upload.html';">
+                <!-- ================= กล่องที่ 1 ================= -->
+                <div class="card-box-figma">
+                    <div class="section-label label-large">ข้อมูลส่วนบุคคลและสถานที่ติดต่อ</div>
+
+                    <div class="f-row">
+                        <div class="f-label">เลขประจำตัวประชาชน*</div>
+                        <div class="f-input-area">
+                            <input type="text" class="f-input w-400" maxlength="13" pattern="\d{13}"
+                                title="กรุณากรอกเลขให้ครบ 13 หลัก" required>
+                        </div>
+                    </div>
+
+                    <div class="f-row">
+                        <div class="f-label">คำนำหน้าชื่อ*</div>
+                        <div class="f-radio-group">
+                            <label class="f-radio"><input type="radio" name="prefix" value="นาย" required> นาย</label>
+
+                            <label class="f-radio"><input type="radio" name="prefix" value="นาง" required> นาง</label>
+
+                            <label class="f-radio"><input type="radio" name="prefix" value="นางสาว" required>
+                                นางสาว</label>
+
+                        </div>
+                    </div>
+
+                    <div class="f-row">
+                        <div class="f-label">ชื่อ นามสกุล (ภาษาไทย)*</div>
+                        <div class="f-input-area">
+                            <input type="text" class="f-input w-250" required>
+                            <input type="text" class="f-input w-250" required>
+                        </div>
+                    </div>
+
+                    <div class="f-row">
+                        <div class="f-label">ชื่อ นามสกุล (ภาษาอังกฤษ)*</div>
+                        <div class="f-input-area">
+                            <input type="text" class="f-input w-250" required>
+                            <input type="text" class="f-input w-250" required>
+                        </div>
+                    </div>
+
+                    <div class="f-row">
+                        <div class="f-label">วันเกิด*</div>
+                        <div class="f-input-area" style="flex: none; width: 200px;">
+                            <input type="date" class="f-input w-full" required>
+                        </div>
+                        <div class="f-label" style="width: auto; padding-left: 10px;">เพศ*</div>
+                        <div class="f-radio-group">
+                            <label class="f-radio"><input type="radio" name="gender" value="ชาย" required> ชาย</label>
+
+                            <label class="f-radio"><input type="radio" name="gender" value="หญิง" required> หญิง</label>
+
+                        </div>
+                    </div>
+
+                    <div class="f-row">
+                        <div class="f-label">ศาสนา*</div>
+                        <div class="f-input-area" style="flex: none; width: 250px;">
+                            <input type="text" class="f-input w-full" required>
+                        </div>
+                        <div class="f-label" style="width: 120px;">เชื้อชาติ*</div>
+                        <div class="f-input-area"><input type="text" class="f-input w-250" required></div>
+                    </div>
+
+                    <div class="f-row">
+                        <div class="f-label">บ้านเลขที่*</div>
+                        <div class="f-input-area" style="flex: none; width: 250px;">
+                            <input type="text" class="f-input w-full" required>
+                        </div>
+                        <div class="f-label" style="width: 120px;">หมู่ที่</div>
+                        <div class="f-input-area"><input type="text" class="f-input w-250" required></div>
+                    </div>
+
+                    <div class="f-row">
+                        <div class="f-label">อำเภอ/เขต*</div>
+                        <div class="f-input-area" style="flex: none; width: 250px;">
+                            <input type="text" class="f-input w-full" required>
+                        </div>
+                        <div class="f-label" style="width: 120px;">จังหวัด*</div>
+                        <div class="f-input-area"><input type="text" class="f-input w-250" required></div>
+                    </div>
+
+                    <div class="f-row">
+                        <div class="f-label">ตำบล/แขวง*</div>
+                        <div class="f-input-area" style="flex: none; width: 250px;">
+                            <input type="text" class="f-input w-full" required>
+                        </div>
+                        <div class="f-label" style="width: 120px;">รหัสไปรษณีย์*</div>
+                        <div class="f-input-area"><input type="text" class="f-input w-250" required></div>
+                    </div>
+
+                    <div class="f-row">
+                        <div class="f-label">เบอร์มือถือ*</div>
+                        <div class="f-input-area">
+                            <input type="tel" class="f-input w-250" maxlength="10" pattern="0\d{9}"
+                                title="กรุณากรอกเบอร์มือถือ 10 หลัก (ขึ้นต้นด้วย 0)" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ================= กล่องที่ 2 ================= -->
+                <div class="card-box-figma">
+                    <div class="section-label label-large">ข้อมูลสถานศึกษาและสถานะการศึกษาปัจจุบัน</div>
+
+
+                    <div class="f-row">
+                        <div class="f-label">จังหวัดที่ตั้งสถานศึกษา*</div>
+                        <div class="f-input-area">
+                            <select class="f-input w-400" required>
+                                <option value="" disabled selected>-- กรุณาเลือกจังหวัด --</option>
+                                <option>กรุงเทพมหานคร</option>
+                                <option>ปราจีนบุรี</option>
+                                <option>ระยอง</option>
+                                <option>ชลบุรี</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="f-row">
+                        <div class="f-label label-wide">ชื่อสถานศึกษา*</div>
+                        <div class="f-input-area"><input type="text" class="f-input w-400" required></div>
+                    </div>
+
+                    <div class="f-row">
+                        <div class="f-label label-wide">สถานะการศึกษา*</div>
+                        <div class="f-radio-group">
+                            <label class="f-radio"><input type="radio" name="edu_status" value="สำเร็จ" required>
+                                สำเร็จการศึกษา</label>
+                            <label class="f-radio"><input type="radio" name="edu_status" value="กำลังศึกษา" required>
+                                กำลังศึกษาอยู่</label>
+                        </div>
+                    </div>
+
+                    <div class="f-row">
+                        <div class="f-label label-wide">คะแนนเฉลี่ยสะสมถึงภาคเรียนสุดท้าย*</div>
+                        <div class="f-input-area"><input type="number" class="f-input" style="width: 150px;" min="0.00"
+                                max="4.00" step="0.01" placeholder="0.00" required></div>
+                    </div>
+                </div>
+
+                <!-- ================= กล่องที่ 3 ================= -->
+                <div class="card-box-figma">
+                    <div class="section-label label-large">ข้อมูลโครงการ คณะและสาขาวิชาที่สมัคร</div>
+
+                    <div class="f-row">
+                        <div class="f-label">คณะ*</div>
+                        <div class="f-input-area">
+                            <select class="f-input w-400" required>
+                                <option value="" disabled selected>-- กรุณาเลือกคณะ --</option>
+                                <option value="fitm">คณะเทคโนโลยีและการจัดการอุตสาหกรรม</option>
+                                <option value="basi">คณะบริหารธุรกิจและอุตสาหกรรมบริการ</option>
+                                <option value="dai">คณะอุตสาหกรรมเกษตรดิจิทัล</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="f-row">
+                        <div class="f-label">โครงการ*</div>
+                        <div class="f-input-area">
+                            <select class="f-input w-400" required>
+                                <option value="" disabled selected>-- กรุณาเลือกโครงการ --</option>
+                                <option value="school_factory">โครงการหลักสูตรโรงเรียน-โรงงาน</option>
+                                <!--[cite: 14] -->
+                                <option value="quota">โครงการโควตา (ม.6, ปวช., ปวส.)</option> <!--[cite: 14] -->
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ================= กล่องที่ 4 ================= -->
+                <div class="card-box-figma">
+                    <div class="section-label label-large">ข้อมูลวุฒิการศึกษาที่ต้องการสมัคร</div>
+
+                    <div class="f-row">
+                        <div class="f-label">วุฒิการศึกษาที่ใช้สมัคร*</div>
+                        <div class="f-input-area">
+                            <select class="f-input w-400" required>
+                                <option value="" disabled selected>-- กรุณาเลือกวุฒิการศึกษา --</option>
+                                <option value="m3">ระดับ ม.3 หรือเทียบเท่า</option> <!--[cite: 14] -->
+                                <option value="m6">ระดับ ม.6</option> <!--[cite: 14] -->
+                                <option value="vocational">ระดับ ปวช.</option> <!--[cite: 14] -->
+                                <option value="high_vocational">ระดับ ปวส.</option> <!--[cite: 14] -->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="f-row">
+                        <div class="f-label label-wide">ประเภทวิชา*</div>
+                        <div class="f-input-area"><input type="text" class="f-input w-400" required></div>
+                    </div>
+                    <div class="f-row">
+                        <div class="f-label label-wide">กลุ่มวิชา*</div>
+                        <div class="f-input-area"><input type="text" class="f-input w-400" required></div>
+                    </div>
+                    <div class="f-row">
+                        <div class="f-label label-wide">สาขาวิชา*</div>
+                        <div class="f-input-area"><input type="text" class="f-input w-400" required></div>
+                    </div>
+                    <div class="f-row">
+                        <div class="f-label label-wide">สาขางาน*</div>
+                        <div class="f-input-area"><input type="text" class="f-input w-400" required></div>
+                    </div>
+                </div>
+
+                <!-- ================= ปุ่มกดยืนยัน ================= -->
+                <div class="bottom-button-group" style="margin-top: 40px; margin-bottom: 40px;">
+                    <button type="submit" class="btn-form-brown btn-large">ถัดไป</button>
+                    <button type="button" class="btn-form-brown btn-outline-brown"
+                        onclick="window.location.href='index.html'">ยกเลิกข้อมูล</button>
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-left">
+            <p><strong>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</strong></p>
+            <p>1518 ถนนประชาราษฎร์ 1 แขวงวงศ์สว่าง เขตบางซื่อ กรุงเทพฯ 10800</p>
+        </div>
+        <div class="footer-right">
+            <p><strong>ติดต่อเรา</strong></p>
+            <p>หมายเลข โทรศัพท์ 0-2555-2000 ต่อ 1626, 1627</p>
+            <p>อีเมล admission@op.kmutnb.ac.th</p>
+        </div>
+    </footer>
+</body>
+
+</html>

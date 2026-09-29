@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>เข้าสู่ระบบ - มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+  </head>
+  <body style="min-height: 100vh">
+
+    <header class="main-header">
+      <div class="header-top">
+        <div class="logo-container">
+          <img
+            src="images/Seal_of_KMUTNB.webp"
+            alt="ตราสัญลักษณ์ มจพ."
+            class="logo-img"
+          />
+          <div class="site-title">
+            <h2 style="font-size: 21px">
+              มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <ul class="nav-links">
+          <li><a href="index.html">หน้าแรก</a></li>
+          <li><a href="schedule.html">กำหนดการรับสมัคร</a></li>
+          <li><a href="https://admission.kmutnb.ac.th/sites/default/files/2025-08/dataforcallcuricert-bacn.pdf" target="_blank">หลักสูตร</a></li>
+          <li><a href="Register.html">ลงทะเบียนเรียน</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="login-background-wrapper">
+      <div class="login-center-content">
+        <img
+          src="images/KMUTNB_logo.png"
+          alt="KMUTNB Invention to Innovation"
+          class="login-kmutnb-logo"
+        />
+
+        <!-- กล่องฟอร์มสีเทา -->
+        <div class="login-form-box">
+          <form action="index_logged.html" method="get">
+            <div class="login-field-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                class="login-pill-input"
+                placeholder=""
+                required
+              />
+            </div>
+
+            <div class="login-field-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                class="login-pill-input"
+                placeholder=""
+                required
+              />
+            </div>
+
+            <!-- ปุ่มสี่เหลี่ยมสีเทา LOGIN -->
+            <button type="submit" class="btn-login-rect">LOGIN</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

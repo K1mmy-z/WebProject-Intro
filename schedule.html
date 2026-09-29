@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>รับสมัครนักศึกษา - มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</title>
+    <title>
+      กำหนดการรับสมัครนักศึกษา - มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ
+    </title>
     <link rel="stylesheet" href="CSS/styles.css" />
   </head>
   <body>
@@ -16,50 +18,57 @@
             class="logo-img"
           />
           <div class="site-title">
-            <h1>รับสมัครนักศึกษา</h1>
+            <h1>กำหนดการรับสมัครนักศึกษา</h1>
             <h2>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</h2>
           </div>
         </div>
-        <!-- ปุ่มเข้าสู่ระบบแบบวงรี (ยังไม่ Login) -->
         <div class="header-auth">
-          <a href="login.html" class="btn-login-pill">เข้าสู่ระบบ</a>
+          <div class="user-pill-badge">
+            <span class="user-name">นาย สมชาย อันตราย</span>
+            <span class="divider">|</span>
+            <a href="index.html" class="logout-link">ออกจากระบบ</a>
+          </div>
         </div>
       </div>
 
-      <!-- แถบเมนูนำทาง -->
       <nav class="main-nav">
         <ul class="nav-links">
-          <li><a href="index.html" class="active">หน้าแรก</a></li>
-          <li><a href="schedule.html">กำหนดการรับสมัคร</a></li>
+          <li><a href="index_logged.html">หน้าแรก</a></li>
+          <li><a href="schedule.html" class="active">กำหนดการรับสมัคร</a></li>
           <li><a href="https://admission.kmutnb.ac.th/sites/default/files/2025-08/dataforcallcuricert-bacn.pdf" target="_blank">หลักสูตร</a></li>
-          <li><a href="Register.html">ลงทะเบียนเรียน</a></li>
+          <li><a href="register.html">ลงทะเบียนเรียน</a></li>
         </ul>
       </nav>
     </header>
 
-    <main class="content-placeholder">
-      <div class="home-card-wrapper">
+    <main
+      class="content-placeholder"
+      style="flex-direction: column; padding: 40px 4%"
+    >
+      <div
+        class="card-box-figma"
+        style="
+          max-width: 900px;
+          padding: 30px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 25px;
+        "
+      >
         <img
           src="images/B1.jpg"
           alt="กำหนดการรับนักศึกษาใหม่ ปีการศึกษา 2570"
-          class="home-banner-img"
+          style="width: 100%; height: auto; border-radius: 6px"
         />
-
-        <div class="home-two-buttons">
-          <!-- ถ้ากดลงทะเบียนเรียน จะพาไปหน้า login ก่อนเพราะยังไม่ได้เข้าสู่ระบบ -->
-          <a href="Register.html" class="btn-pill-brown">ลงทะเบียนเรียน</a>
-          <a href="schedule.html" class="btn-pill-white">หลักสูตรที่เปิดสอน</a>
-        </div>
-
-        <!-- ข้อความคู่มือและอ่านเพิ่มเติม -->
-        <div class="home-bottom-info">
-          <p class="info-title">คู่มือการใช้งานระบบรับสมัครนักศึกษาออนไลน์</p>
-          <a href="#" class="info-link">อ่านเพิ่มเติม</a>
-        </div>
+        <img
+          src="images/Timeline2570.jpg"
+          alt="กำหนดการรับสมัครนักศึกษา TCAS 70"
+          style="width: 100%; height: auto; border-radius: 6px"
+        />
       </div>
     </main>
 
-    <!-- ส่วนท้าย (Footer) -->
     <footer class="main-footer">
       <div class="footer-left">
         <p><strong>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</strong></p>
